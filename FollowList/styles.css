@@ -1,0 +1,58 @@
+body {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.movie-poster {
+    width: 20%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+  }
+
+h1, h3, h2 {
+    color:white;
+    text-align: center;
+}
+
+#service {
+    margin: auto;
+    justify-content: center;
+    text-align: center;
+}
+
+img {
+    width:100px;
+    padding-bottom: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 0px;
+}
+
+.buttons {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.button-options {
+    text-align: center;
+}
+
+.button {
+    background-color: #686868;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+#play {
+    width: 500px;
+    height: 80px;
+    font-size: 50px;
+}
