@@ -1,0 +1,122 @@
+<!doctype html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>FA2 - Search Title Use Case</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+
+    <body style="background-color:black;">
+        <h1 class="display-1">Display 1</h1>
+        <div class="form-group">
+            <input type="text" class="form-control" id="titleInput" aria-describedby="titleHelp" placeholder="Enter title">
+            <button type="button" id="searchMovie" class="btn btn-primary btn-lg btn-block" onclick="searchMovie()" style="margin-bottom: 2vh;">Search</button>
+            <div class="row" id="filterList">
+                <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Genre </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Comedy</a>
+                    <a class="dropdown-item" href="#">Horror</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Actor</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Tobey Maguire</a>
+                    <a class="dropdown-item" href="#">Chris Pine</a>
+                    <a class="dropdown-item" href="#">James Franco</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Streaming Service</button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Disney+</a>
+                    <a class="dropdown-item" href="#">Netflix</a>
+                    <a class="dropdown-item" href="#">Prime Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        
+        <table class="table table-dark" id="mediaList">
+            <tbody>
+                <tr>
+                    <td>
+                        <img src="https://image.tmdb.org/t/p/original//iiZZdoQBEYBv6id8su7ImL0oCbD.jpg" class="movie-poster"/>
+                    </td>
+                    <td>
+                        <h3>Spider-Man: Into the Spider-Verse</h1>
+                        <h5>Teen Miles Morales becomes the Spider-Man of his universe, and must join with five spider-powered individuals from other dimensions to stop a threat for all realities.</h6>
+                        <h6>Genre: Action, Adventure, Comedy</h6>
+                        <div id="service">
+                            <a href="https://www.netflix.com/title/81002747"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRThEotqUQHzGSq9OaJCbmuY0PryK-9UffVGUkLSFXZUCBCq23EDHFlYxVNLR0Wkadraw&usqp=CAU" alt="Netflix"></a>
+                            <a href="https://www.primevideo.com/detail/0K1VVSRJ3WZJKDPUUMGB4U4N06/"><img src="https://logodownload.org/wp-content/uploads/2018/07/prime-video.png" alt="Amazon Prime video"></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://image.tmdb.org/t/p/original//gh4cZbhZxyTbgxQPxD0dOudNPTn.jpg" class="movie-poster"/>
+                    </td>
+                    <td>
+                        <h3>Spider-Man 1</h1>
+                        <h5>When bitten by a genetically modified spider, a nerdy, shy, and awkward high school student gains spider-like abilities that he eventually must use to fight evil as a superhero after tragedy befalls his family.</h6>
+                        <h6>Genre: Action, Adventure, Romance</h6>
+                        <div id="service">
+                            <a href="https://www.netflix.com/title/81002747"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRThEotqUQHzGSq9OaJCbmuY0PryK-9UffVGUkLSFXZUCBCq23EDHFlYxVNLR0Wkadraw&usqp=CAU" alt="Netflix"></a>
+                            <a href="https://www.disneyplus.com/en-ca/"><img src="https://logodownload.org/wp-content/uploads/2020/11/disney-plus-logo-1.png" alt="Disney+"></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://image.tmdb.org/t/p/original//olxpyq9kJAZ2NU1siLshhhXEPR7.jpg" class="movie-poster"/>
+                    </td>
+                    <td>
+                        <h3>Spider-Man 2</h1>
+                        <h5>Peter Parker is beset with troubles in his failing personal life as he battles a brilliant scientist named Doctor Otto Octavius.</h6>
+                        <h6>Genre: Action, Adventure</h6>
+                        <div id="service">
+                            <a href="https://www.netflix.com/title/81002747"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRThEotqUQHzGSq9OaJCbmuY0PryK-9UffVGUkLSFXZUCBCq23EDHFlYxVNLR0Wkadraw&usqp=CAU" alt="Netflix"></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="https://image.tmdb.org/t/p/original//sqZKCRYGovZ8aN99VVJSdL8Ja9k.jpg" class="movie-poster"/>
+                    </td>
+                    <td>
+                        <h1>Spider-Man 3</h1>
+                        <h5>A strange black entity from another world bonds with Peter Parker and causes inner turmoil as he contends with new villains, temptations, and revenge.</h6>
+                        <h6>Genre: Action, Adventure, Horror</h6>
+                        <div id="service">
+                            <a href="https://www.netflix.com/title/81002747"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRThEotqUQHzGSq9OaJCbmuY0PryK-9UffVGUkLSFXZUCBCq23EDHFlYxVNLR0Wkadraw&usqp=CAU" alt="Netflix"></a>
+                            <a href="https://www.primevideo.com/detail/0K1VVSRJ3WZJKDPUUMGB4U4N06/"><img src="https://logodownload.org/wp-content/uploads/2018/07/prime-video.png" alt="Amazon Prime video"></a>
+                            <a href="https://www.disneyplus.com/en-ca/"><img src="https://logodownload.org/wp-content/uploads/2020/11/disney-plus-logo-1.png" alt="Disney+"></a>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+
+        <script>
+            function searchMovie() {
+                var searchTitle = document.getElementById("titleInput").value 
+
+                document.getElementById("mediaList").style.display = "block"
+
+                console.log(searchTitle)
+            }
+            
+        </script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+</html>
